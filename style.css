@@ -159,6 +159,11 @@ section > * {
   border-radius: 12px;
   border: 1px solid #e5e5e5;
   box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+  transition: 0.3s;
+}
+
+.exp-item:hover {
+  transform: translateY(-5px);
 }
 
 /* TITULO DO CARD */
