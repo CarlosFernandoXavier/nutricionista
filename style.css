@@ -232,9 +232,37 @@ section > * {
   color: #1f7a6b;
 }
 
+
+/*Depoimentos*/
+.depoimentos-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.depoimento {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.depoimento p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.autor {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+
 /* SEÇÕES */
 #beneficios { background: #f0f7f5; }
-#depoimentos { background: #fff; }
 #sobre { background: #eef7f5; }
 
 
@@ -316,5 +344,8 @@ blockquote {
 @media (min-width: 768px) {
   .exp-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .depoimentos-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
