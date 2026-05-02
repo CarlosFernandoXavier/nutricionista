@@ -326,6 +326,22 @@ blockquote {
   font-style: italic;
 }
 
+.cta-benefits {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.cta-item {
+  color: white;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 600px) {
   #hero h1 {
@@ -347,5 +363,9 @@ blockquote {
   }
   .depoimentos-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .cta-benefits {
+    flex-direction: row;
+    justify-content: center;
   }
 }
