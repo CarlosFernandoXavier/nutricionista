@@ -258,7 +258,71 @@ section > * {
   color: #666;
 }
 
+/*Seção de autoridade*/
+#autoridade {
+  background: #ffffff;
+}
 
+.autoridade-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* GRID LADO A LADO */
+.autoridade-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* FOTO */
+.autoridade-foto {
+  display: flex;
+  justify-content: center;
+}
+
+.autoridade-foto img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* TEXTO */
+.autoridade-texto {
+  text-align: center;
+}
+
+.autoridade-nome {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f7a6b;
+  margin-bottom: 5px;
+}
+
+.autoridade-destaque {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* BADGES */
+.autoridade-badges {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.autoridade-badges div {
+  background: #f0f7f5;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
 
 
 /* SEÇÕES */
