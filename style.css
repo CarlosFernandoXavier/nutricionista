@@ -28,55 +28,78 @@ section > * {
 /* HERO */
 #hero {
   background: linear-gradient(135deg, #e6f7f3, #f5fbf9);
-  padding: 140px 20px 100px;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 20px 80px;
 }
 
-#hero h1 {
-  font-size: 2.8rem;
+/* efeito de luz */
+#hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(31,122,107,0.15), transparent 70%);
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* CONTAINER LADO A LADO */
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: -65px;
+  margin-top: -150px;
+}
+
+/* TEXTO */
+.hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.sub-highlight {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: cadetblue;
+  
+}
+
+.sub {
+  font-size: 1.15rem;
+  max-width: 520px;
+}
+
+.tag {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f7a6b;
+  letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
   line-height: 1.15;
   color: #1f2d2a;
 }
 
+/* CTA */
 .hero-cta {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-
-.hero-container {
-  max-width: 680px; /* 🔥 aqui está o segredo */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 22px; /* 🔥 ritmo consistente */
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  line-height: 1.1;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #1f2d2a;
-  max-width: 700px;
-}
-
-.sub {
-  font-size: 1.1rem;
-  color: #4a6b66;
-}
-
-
+/* BOTÃO */
 .hero-btn {
   padding: 18px 42px;
   background: #25d366;
@@ -98,13 +121,25 @@ section > * {
   color: #6b7c78;
 }
 
-/* TAG */
-.tag {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #1f7a6b;
-  letter-spacing: 0.5px;
+/* IMAGEM */
+.hero-image {
+   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* 🔥 ESSENCIAL */
 }
+
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: -4px;
+
+  /* profundidade */
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+}
+
 /* TEXTO FINAL */
 .micro {
   margin-top: 20px;
@@ -459,12 +494,29 @@ blockquote {
     justify-content: center;
   }
 
-  .hero-text {
-    text-align: left;
+  .hero-container {
+    grid-template-columns: 1.1fr 0.9fr;
   }
 
-  .hero-text .sub {
-    margin: 0;
+  .hero-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-cta {
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-image {
+    justify-content: flex-end;
+  }
+
+  .hero-image img {
+    max-width: 420px;
   }
 
 }
