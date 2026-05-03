@@ -27,62 +27,84 @@ section > * {
 
 /* HERO */
 #hero {
-  background: linear-gradient(135deg, #b7e4d9, #d8f3ec);
-  padding: 120px 20px;
+  background: linear-gradient(135deg, #e6f7f3, #f5fbf9);
+  padding: 140px 20px 100px;
+  text-align: center;
 }
 
-/* CONTAINER INTERNO */
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
+#hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.15;
+  color: #1f2d2a;
+}
+
+.hero-cta {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.hero-container {
+  max-width: 680px; /* 🔥 aqui está o segredo */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px; /* 🔥 ritmo consistente */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2d2a;
+  max-width: 700px;
+}
+
+.sub {
+  font-size: 1.1rem;
+  color: #4a6b66;
+}
+
+
+.hero-btn {
+  padding: 18px 42px;
+  background: #25d366;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(37,211,102,0.3);
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+/* NOTA */
+.hero-note {
+  font-size: 0.8rem;
+  color: #6b7c78;
 }
 
 /* TAG */
 .tag {
   font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #1f7a6b;
-  opacity: 0.8;
-}
-
-/* TITULO */
-#hero h1 {
-  font-size: 2.8rem;
-  line-height: 1.2;
   font-weight: 600;
-  margin: 0;
+  color: #1f7a6b;
+  letter-spacing: 0.5px;
 }
-
-/* SUBTEXTO */
-.sub {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  color: #444;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* BLOCO DO CTA */
-.hero-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-/* NOTA DO CTA */
-.cta-note {
-  font-size: 0.85rem;
-  color: #2b2b2b;
-  opacity: 0.7;
-}
-
 /* TEXTO FINAL */
 .micro {
   margin-top: 20px;
@@ -408,8 +430,12 @@ blockquote {
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
+  #hero {
+    padding: 100px 20px 70px;
+  }
+
   #hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .sub {
@@ -432,4 +458,13 @@ blockquote {
     flex-direction: row;
     justify-content: center;
   }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-text .sub {
+    margin: 0;
+  }
+
 }
