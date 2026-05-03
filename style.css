@@ -30,7 +30,7 @@ section > * {
   background: linear-gradient(135deg, #e6f7f3, #f5fbf9);
   position: relative;
   overflow: hidden;
-  padding: 120px 20px 80px;
+  padding: 10px 20px 60px;
 }
 
 /* efeito de luz */
@@ -56,15 +56,9 @@ section > * {
   gap: 40px;
   align-items: end;
   margin-bottom: -65px;
-  margin-top: -150px;
+  /*margin-top: -150px;*/
 }
 
-/* TEXTO */
-.hero-content h1 {
-  font-size: 3.2rem;
-  line-height: 1.1;
-  font-weight: 800;
-}
 
 .sub-highlight {
   font-size: 1.20rem;
@@ -84,12 +78,6 @@ section > * {
   font-weight: 600;
   color: #1c9581;
   letter-spacing: 0.5px;
-}
-
-.hero-content h1 {
-  font-size: 2.4rem;
-  line-height: 1.15;
-  color: #1f2d2a;
 }
 
 /* CTA */
@@ -135,7 +123,7 @@ section > * {
   position: relative;
   z-index: 1;
   display: block;
-  margin-bottom: -4px;
+  margin-bottom: -20px;
 
   /* profundidade */
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
