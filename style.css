@@ -46,6 +46,21 @@ section > * {
     );
 }
 
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
+
+  background-size: 22px 22px;
+
+  opacity: 0.18;
+
+  pointer-events: none;
+}
+
 .hero-glow {
   position: absolute;
 
@@ -71,19 +86,6 @@ section > * {
 }
 
 
-/* efeito de luz */
-#hero::after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(31,122,107,0.12), transparent 70%);
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-  z-index: 0;
-}
-
 /* CONTAINER LADO A LADO */
 .hero-container {
   width: 100%;
@@ -98,7 +100,8 @@ section > * {
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
+  max-width: 540px;
 }
 
 .tag {
@@ -110,9 +113,9 @@ section > * {
 .hero-content h1 {
   font-size: 1.9rem;
   line-height: 1.3;
-  color: #243936;
-  line-height: 1.18;
-  font-weight: 600;
+  color: #4d6f69;
+  line-height: 1.24;
+  font-weight: 500;
 }
 
 
@@ -125,7 +128,7 @@ section > * {
 }
 .sub {
   font-size: 1.1rem;
-  color: #2c756b;
+  color: #5f746f;
   max-width: 520px;
 }
 /* CTA */
@@ -151,7 +154,11 @@ section > * {
   border: none;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, #25d366, #1ebe5b);
+  background: linear-gradient(
+135deg,
+#27b36a,
+#23995c
+);
 
   color: #ffffff;
   text-decoration: none;
