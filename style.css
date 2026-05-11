@@ -777,7 +777,7 @@ p {
   h2 {
     font-size: 2rem;
     margin-bottom: 16px;
-    line-height: 1.22;
+    line-height: 1.16;
   }
 
   p {
@@ -817,7 +817,7 @@ p {
   /* EXPLICAÇÃO */
 
   #explicacao {
-    padding-top: 60px;
+    padding-top: 52px;
     padding-bottom: 68px;
   }
 
@@ -858,17 +858,17 @@ p {
   }
 
   .steps-grid {
-    gap: 16px;
-    margin-top: 28px;
+    gap: 14px;
+    margin-top: 22px;
   }
 
   .step {
-    padding: 24px;
+    padding: 22px;
     border-radius: 22px;
   }
 
   .step-header {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .step-number {
@@ -889,12 +889,13 @@ p {
   }
 
   .depoimento {
-    padding: 24px;
+    padding: 22px;
     border-radius: 22px;
   }
 
   .depoimento p {
     margin-bottom: 14px;
+    line-height: 1.58;
   }
 
   /* AUTORIDADE */
@@ -909,7 +910,7 @@ p {
   }
 
   .autoridade-texto {
-    margin-top: 48px;
+    margin-top: 38px;
     max-width: 700px;
   }
 
