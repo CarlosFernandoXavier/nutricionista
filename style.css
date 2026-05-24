@@ -26,6 +26,115 @@ section > * {
   margin: 0 auto;
 }
 
+#oferta {
+  padding: 100px 24px;
+
+  background: linear-gradient(
+    180deg,
+    #f8fbfa 0%,
+    #eef6f4 100%
+  );
+}
+
+.oferta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* INTRO */
+
+.oferta-intro {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+/* BOX (alinhado com .exp-item e .step) */
+
+.oferta-box {
+  margin-top: 12px;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.8);
+
+  border: 1px solid rgba(255,255,255,0.7);
+
+  box-shadow:
+    0 12px 35px rgba(44, 78, 71, 0.05);
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+}
+
+.oferta-box:hover {
+  transform: translateY(-4px);
+}
+
+.oferta-garantia {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #6b7c78;
+  opacity: 0.9;
+}
+
+.oferta-transformation {
+  margin-top: 14px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  padding: 18px 20px;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(28,149,129,0.08),
+    rgba(28,149,129,0.04)
+  );
+
+  border: 1px solid rgba(28,149,129,0.12);
+
+  color: #43615c;
+
+  font-size: 0.98rem;
+  line-height: 1.6;
+
+  box-shadow:
+    0 8px 24px rgba(44, 78, 71, 0.04);
+}
+
+/* LISTA */
+
+.oferta-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin: 18px 0;
+}
+
+.oferta-list li {
+  color: #56706a;
+}
+
+/* NOTA */
+
+.oferta-note {
+  margin-top: 16px;
+  padding-top: 14px;
+
+  border-top: 1px solid rgba(0,0,0,0.06);
+
+  font-size: 0.92rem;
+  color: #6b7c78;
+
+  opacity: 0.95;
+}
+
+
 /* ESPAÇAMENTO GLOBAL */
 #dor,
 #explicacao,
@@ -736,6 +845,28 @@ p {
   .dor-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #oferta {
+    padding: 72px 24px;
+  }
+
+  .oferta-intro {
+    margin-bottom: 24px;
+    max-width: 660px;
+  }
+
+  .oferta-box {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .oferta-list {
+    gap: 11px;
+  }
+
+  .oferta-note {
+    font-size: 0.9rem;
+  }
 }
 
 /*MOBILE*/
@@ -782,6 +913,36 @@ p {
 
   .autoridade-badges div {
     width: 100%;
+  }
+
+  #oferta {
+    padding: 80px 20px;
+  }
+
+  .oferta-intro {
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .oferta-box {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .oferta-list {
+    gap: 10px;
+  }
+
+  .oferta-note {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 12px 6px 0;
+  }
+
+  .oferta-transformation {
+    padding: 16px 16px;
+    font-size: 0.92rem;
+    text-align: center;
   }
 }
 
@@ -999,6 +1160,24 @@ p {
   .cta-item {
     padding: 10px 16px;
   }
+
+  .oferta-section {
+    padding: 72px 24px;
+  }
+
+  .oferta-box {
+    padding: 22px 24px;
+  }
+
+  .oferta-note {
+    font-size: 0.9rem;
+  }
+
+  .oferta-transformation {
+    padding: 16px 18px;
+    font-size: 0.95rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -1027,5 +1206,29 @@ p {
   .autor,
   .cta-item {
     font-size: 0.95rem;
+  }
+
+  .oferta-box {
+    margin-top: 16px;
+
+    padding: 32px;
+    border-radius: 24px;
+  }
+
+  .oferta-intro {
+    max-width: 880px;
+  }
+
+  .oferta-list li {
+    font-size: 1.05rem;
+  }
+
+  .oferta-note {
+    font-size: 0.95rem;
+  }
+
+  .oferta-transformation {
+    font-size: 1.02rem;
+    padding: 20px 24px;
   }
 }
